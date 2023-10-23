@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# is used to display a list of all TCP connections and listening ports,
+# showing numeric addresses and port numbers. 
+netstat -an -p tcp
