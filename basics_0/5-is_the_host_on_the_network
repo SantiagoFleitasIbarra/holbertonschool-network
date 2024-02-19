@@ -5,4 +5,4 @@ if [ "$#" -ne 1 ]; then
     echo "Usage: $0 {IP_ADDRESS}"
     exit 1
 fi
-ping -c5 "$1"
+ping "$1" -c5
