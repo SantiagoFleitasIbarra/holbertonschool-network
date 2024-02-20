@@ -3,8 +3,7 @@
 # Ping the IP 5 times
 if [ "$#" -ne 1 ]
 then
-    echo "Usage: $0 {IP_ADDRESS}"
-    exit 1
+    echo "Usage: 5-is_the_host_on_the_network {IP_ADDRESS}"
 else
     ping "$1" -c5
 fi
