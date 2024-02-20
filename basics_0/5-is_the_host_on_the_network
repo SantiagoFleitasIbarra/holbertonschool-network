@@ -1,7 +1,10 @@
 #!/usr/bin/env bash
-#Accepts a string as an argument
-#Ping the IP 5 times
-if [ "$#" -ne 1 ]; then
+# Accepts a string as an argument
+# Ping the IP 5 times
+if [ "$#" -ne 1 ]
+then
     echo "Usage: $0 {IP_ADDRESS}"
+    exit 1
+else
+    ping "$1" -c5
 fi
-ping "$1" -c5
