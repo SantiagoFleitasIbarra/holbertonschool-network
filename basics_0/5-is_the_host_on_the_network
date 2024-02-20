@@ -3,6 +3,5 @@
 #Ping the IP 5 times
 if [ "$#" -ne 1 ]; then
     echo "Usage: $0 {IP_ADDRESS}"
-    exit 1
 fi
 ping "$1" -c5
